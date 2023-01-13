@@ -55,9 +55,7 @@ public class Hra {
         this.zivot.ziskajZivoty();
 
         this.meno = meno;
-        //JOptionPane.showMessageDialog(null, "Máš 3 životy. Káždým padnútím loptičky mimo padu sa ti jeden odoberie. Keď budeš mat 0 životov hru si prehral. ");
-        //this.meno = JOptionPane.showInputDialog(null, "Máš 3 životy. Káždým padnútím loptičky mimo padu sa ti jeden odoberie. Keď budeš mat 0 životov hru si prehral. \nZadaj meno: ");
-        JOptionPane.showMessageDialog(null, "Máš 3 životy. Káždým padnútím loptičky mimo padu sa ti jeden odoberie. \nKeď budeš mat 0 životov hru si prehral.\nKeď rozibješ všetky bloky alebo získaš 130 bodov hru si vyhral.");
+        //JOptionPane.showMessageDialog(null, "Máš 3 životy. Káždým padnútím loptičky mimo padu sa ti jeden odoberie. \nKeď budeš mat 0 životov hru si prehral.\nKeď rozibješ všetky bloky alebo získaš 130 bodov hru si vyhral.");
     }
 
     /**

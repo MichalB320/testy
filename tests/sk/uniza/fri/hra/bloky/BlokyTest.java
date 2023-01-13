@@ -16,9 +16,21 @@ class BlokyTest {
 
     @Test
     void intersectionHorny() {
-        Hra hra = new Hra("Jozko");
-        Bloky bloky = hra.getBloky();
-        Lopticka lopticka = hra.getLopticka();
+        Bloky bloky = new Bloky();
+        Lopticka lopticka = new Lopticka(50, 50, 0, 0);
+
+        if (bloky.intersectionHorny(lopticka)) {
+            assertTrue(true);
+        } else {
+            assertFalse(false);
+        }
+    }
+
+    @Test
+    void intersectionHornyN() {
+        Bloky bloky = new Bloky();
+        Lopticka lopticka = new Lopticka(50, 200, 0, 0);
+
         if (bloky.intersectionHorny(lopticka)) {
             assertTrue(true);
         } else {
@@ -28,9 +40,21 @@ class BlokyTest {
 
     @Test
     void intersectionPravy() {
-        Hra hra = new Hra("Jozko");
-        Bloky bloky = hra.getBloky();
-        Lopticka lopticka = hra.getLopticka();
+        Bloky bloky = new Bloky();
+        Lopticka lopticka = new Lopticka(50, 50, 0, 0);
+
+        if (bloky.intersectionPravy(lopticka)) {
+            assertTrue(true);
+        } else {
+            assertFalse(false);
+        }
+    }
+
+    @Test
+    void intersectionPravyN() {
+        Bloky bloky = new Bloky();
+        Lopticka lopticka = new Lopticka(50, 200, 0, 0);
+
         if (bloky.intersectionPravy(lopticka)) {
             assertTrue(true);
         } else {
@@ -40,9 +64,21 @@ class BlokyTest {
 
     @Test
     void intersectionLavy() {
-        Hra hra = new Hra("Jozko");
-        Bloky bloky = hra.getBloky();
-        Lopticka lopticka = hra.getLopticka();
+        Bloky bloky = new Bloky();
+        Lopticka lopticka = new Lopticka(50, 50, 0, 0);
+
+        if (bloky.intersectionLavy(lopticka)) {
+            assertTrue(true);
+        } else {
+            assertFalse(false);
+        }
+    }
+
+    @Test
+    void intersectionLavyN() {
+        Bloky bloky = new Bloky();
+        Lopticka lopticka = new Lopticka(50, 200, 0, 0);
+
         if (bloky.intersectionLavy(lopticka)) {
             assertTrue(true);
         } else {
@@ -52,9 +88,21 @@ class BlokyTest {
 
     @Test
     void intersectionSpodny() {
-        Hra hra = new Hra("Jozko");
-        Bloky bloky = hra.getBloky();
-        Lopticka lopticka = hra.getLopticka();
+        Bloky bloky = new Bloky();
+        Lopticka lopticka = new Lopticka(50, 50, 0, 0);
+
+        if (bloky.intersectionSpodny(lopticka)) {
+            assertTrue(true);
+        } else {
+            assertFalse(false);
+        }
+    }
+
+    @Test
+    void intersectionSpodnyN() {
+        Bloky bloky = new Bloky();
+        Lopticka lopticka = new Lopticka(50, 500, 0, 0);
+
         if (bloky.intersectionSpodny(lopticka)) {
             assertTrue(true);
         } else {
