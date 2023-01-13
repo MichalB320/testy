@@ -53,4 +53,7 @@ public class Zapisovac {
         zapis.close();
     }
 
+    public ArrayList<String> getDiar() {
+        return this.diar;
+    }
 }
