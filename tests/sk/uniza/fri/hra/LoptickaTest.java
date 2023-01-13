@@ -50,6 +50,72 @@ class LoptickaTest {
     }
 
     @Test
+    void odrazVpravo3() {
+        Lopticka lopticka = new Lopticka(50, 50, 5, -5);
+        int smerX = 5;
+        int smerY = -5;
+        lopticka.odrazVpravo3();
+
+        assertEquals(smerX, lopticka.getSmerX());
+        assertEquals(smerY, lopticka.getSmerY());
+    }
+
+    @Test
+    void odrazVpravo2() {
+        Lopticka lopticka = new Lopticka(50, 50, 5, -5);
+        int smerX = 2;
+        int smerY = -7;
+        lopticka.odrazVpravo2();
+
+        assertEquals(smerX, lopticka.getSmerX());
+        assertEquals(smerY, lopticka.getSmerY());
+    }
+
+    @Test
+    void odrazVpravo1() {
+        Lopticka lopticka = new Lopticka(50, 50, 5, -5);
+        int smerX = 1;
+        int smerY = -7;
+        lopticka.odrazVpravo1();
+
+        assertEquals(smerX, lopticka.getSmerX());
+        assertEquals(smerY, lopticka.getSmerY());
+    }
+
+    @Test
+    void odrazVlavo1() {
+        Lopticka lopticka = new Lopticka(50, 50, 5, -5);
+        int smerX = -1;
+        int smerY = -7;
+        lopticka.odrazVlavo1();
+
+        assertEquals(smerX, lopticka.getSmerX());
+        assertEquals(smerY, lopticka.getSmerY());
+    }
+
+    @Test
+    void odrazVlavo2() {
+        Lopticka lopticka = new Lopticka(50, 50, 5, -5);
+        int smerX = -2;
+        int smerY = -7;
+        lopticka.odrazVlavo2();
+
+        assertEquals(smerX, lopticka.getSmerX());
+        assertEquals(smerY, lopticka.getSmerY());
+    }
+
+    @Test
+    void odrazVlavo3() {
+        Lopticka lopticka = new Lopticka(50, 50, 5, -5);
+        int smerX = -5;
+        int smerY = -5;
+        lopticka.odrazVlavo3();
+
+        assertEquals(smerX, lopticka.getSmerX());
+        assertEquals(smerY, lopticka.getSmerY());
+    }
+
+    @Test
     void jeMimoObrazovky() {
         Lopticka lopticka = new Lopticka(50, 500, 5, -5);
 

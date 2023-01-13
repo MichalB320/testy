@@ -12,24 +12,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class ZivotyTest {
 
     @Test
-    void stratZivotPrvyKrat() {
-        Zivoty zivoty = new Zivoty();
-        zivoty.stratZivot(1);
-
-        assertEquals(1, zivoty.getStav());
-    }
-
-    @Test
-    void stratZivotDruhyKrat() {
-        Zivoty zivoty = new Zivoty();
-        zivoty.stratZivot(2);
-
-        assertEquals(2, zivoty.getStav());
-    }
-
-    @Test
     void stratZivotTretiKrat() {
         Zivoty zivoty = new Zivoty();
+        zivoty.stratZivot(1);
+        zivoty.stratZivot(2);
         zivoty.stratZivot(3);
 
         assertEquals(3, zivoty.getStav());
@@ -38,8 +24,21 @@ class ZivotyTest {
     @Test
     void stratZivotStvrtyKrat() {
         Zivoty zivoty = new Zivoty();
+        zivoty.stratZivot(1);
+        zivoty.stratZivot(2);
+        zivoty.stratZivot(3);
         zivoty.stratZivot(4);
 
         assertEquals(4, zivoty.getStav());
+    }
+
+    @Test
+    void ziskajZivoty() {
+        Zivoty zivoty = new Zivoty();
+        zivoty.stratZivot(1);
+        zivoty.stratZivot(2);
+
+        zivoty.ziskajZivoty();
+        assertEquals(0, zivoty.getStav());
     }
 }

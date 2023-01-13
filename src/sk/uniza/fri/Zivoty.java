@@ -49,6 +49,7 @@ public class Zivoty {
         this.obdlznik1.zobraz();
         this.obdlznik2.zobraz();
         this.obdlznik3.zobraz();
+        this.stav = 0;
     }
     
     /**

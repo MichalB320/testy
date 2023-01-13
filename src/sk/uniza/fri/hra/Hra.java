@@ -237,10 +237,6 @@ public class Hra {
         System.exit(0);
     }
 
-    public Score getScore() {
-        return this.score;
-    }
-
     public Lopticka getLopticka() {
         return this.lopticka;
     }
