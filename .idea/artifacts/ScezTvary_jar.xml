@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="ScezTvary:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ScezTvary_jar</output-path>
+    <root id="root">
+      <element id="archive" name="ScezTvary.jar">
+        <element id="module-output" name="ScezTvary" />
+      </element>
+    </root>
+  </artifact>
+</component>
