@@ -116,8 +116,6 @@ public class Pad {
      * @return true - ak lopticka koliduje s pravou stranou padu
      */
     public boolean prava2KolidujeS(Lopticka lopticka) {
-
-
         int loptickaX = lopticka.getStredX();
         int loptickaY = lopticka.getStredY() + 5;
 
@@ -239,5 +237,9 @@ public class Pad {
 
     public int getPoziciaX() {
         return this.poziciaX;
+    }
+
+    public int getAktualnaVelkost() {
+        return this.aktualnaVelkost;
     }
 }

@@ -63,64 +63,6 @@ class BlokyTest {
     }
 
     @Test
-    void rozbi() {
-        Hra hra = new Hra("Jozko");
-        Bloky blokyH = hra.getBloky();
-        Lopticka lopticka = hra.getLopticka();
-        Blok[][] bloky = hra.getBloky().getBloky();
-
-        double rozostup = 18;
-        double riadok = lopticka.getStredY();
-        double stlpec = lopticka.getStredX();
-        if (blokyH.intersectionHorny(lopticka)) {
-            riadok = riadok - 5.0 / rozostup;
-            stlpec = stlpec / 18;
-
-            if (bloky[(int) riadok][(int) stlpec].getX() == -20 && bloky[(int) riadok][(int) stlpec].getY() == -20) {
-                assertTrue(true, "blok sa rozbil");
-            } else {
-                assertFalse(false, "blok sa nerozbil");
-            }
-        } else if (blokyH.intersectionPravy(lopticka)) {
-            riadok = riadok / 18;
-            stlpec = stlpec - 5.0 / 18;
-
-            if (bloky[(int) riadok][(int) stlpec].getX() == -20 && bloky[(int) riadok][(int) stlpec].getY() == -20) {
-                assertTrue(true, "blok sa rozbil");
-            } else {
-                assertFalse(false, "blok sa nerozbil");
-            }
-        } else if (blokyH.intersectionLavy(lopticka)) {
-            riadok = riadok / 18;
-            stlpec = stlpec + 5.0 / 18;
-
-            if (bloky[(int) riadok][(int) stlpec].getX() == -20 && bloky[(int) riadok][(int) stlpec].getY() == -20) {
-                assertTrue(true, "blok sa rozbil");
-            } else {
-                assertFalse(false, "blok sa nerozbil");
-            }
-        }  else if (blokyH.intersectionSpodny(lopticka)) {
-            riadok = riadok + 5.0 / 18;
-            stlpec = stlpec / 18;
-
-            if (bloky[(int) riadok][(int) stlpec].getX() == -20 && bloky[(int) riadok][(int) stlpec].getY() == -20) {
-                assertTrue(true, "blok sa rozbil");
-            } else {
-                assertFalse(false, "blok sa nerozbil");
-            }
-        } else {
-            assertFalse(false, "blok sa nerozbil");
-        }
-
-//        if (bloky[(int) riadok][(int) stlpec].getX() == -20 && bloky[(int) riadok][(int) stlpec].getY() == -20) {
-//            assertTrue(true, "blok sa rozbil");
-//        } else {
-//            assertFalse(false, "blok sa nerozbil");
-//        }
-
-    }
-
-    @Test
     void getBodovac() {
         Bloky bloky = new Bloky();
         assertEquals(0, bloky.getBodovac());
